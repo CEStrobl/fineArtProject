@@ -1,0 +1,108 @@
+html, body{
+    font-family:Raleway;
+    margin:0;
+    height:100%;
+    /* transition-duration: 0.8s; */
+}
+
+.topnav .title {
+    float: left;
+    padding: 15px;
+    font-size: 30px;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.topnav {
+    
+    position:sticky;
+    top: 0;
+    padding: 20px;
+    margin:0%;
+    
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+
+    color: #362c31;
+    /* background-image: radial-gradient(circle at top right, rgb(36, 9, 119) 0%, rgb(36, 9, 119) 48%,rgb(72, 7, 149) 48%, rgb(72, 7, 149) 53%,rgb(109, 5, 178) 53%, rgb(109, 5, 178) 56%,rgb(145, 2, 208) 56%, rgb(145, 2, 208) 69%,rgb(181, 0, 237) 69%, rgb(181, 0, 237) 100%); */
+    background-color:#ffffff;
+    text-transform: uppercase;
+}
+
+
+
+.topnav .block {
+    float: right;
+    padding: 15px;
+    font-size: 30px;
+    margin-right: 20px;
+}
+
+.topnav .block:hover {
+    background-color: rgb(181, 0, 237);
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+
+.leftGroup {
+    flex: 1;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+}
+
+.rightGroup {
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 60px;
+}
+
+
+/* Slideshow */
+
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+   }
+    100% {
+        transform: translateX(calc(-500px * 5));
+   }
+}
+.slider {
+    background: white;
+    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+    height: 500px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+.slider::before, .slider::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    content: "";
+    height: 500px;
+    position: absolute;
+    width: 200px;
+    z-index: 2;
+}
+.slider::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+.slider::before {
+    left: 0;
+    top: 0;
+}
+.slider .slide-track {
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(500px * 10);
+}
+.slider .slide {
+    height: unset;
+    width: 500px;
+}
