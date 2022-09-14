@@ -5,30 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <!-- <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"> -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Raleway:wght@200;300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&family=Dancing+Script:wght@400;500;600;700&family=Ms+Madi&family=Raleway:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Idea 1</title>
   </head>
+  <script src="script.js"></script>
   <body>
     <!-- Top Nav -->
     <div class="topnav flex" style="margin: 0px">
       <div class="leftGroup">
-        <div class="title">Fine Art by Mrs Farmer</div>
+        <div class="title"><a href="index.html">Fine Art by Mrs Farmer</a></div>
       </div>
       <div class="rightGroup">
-        <div class="block">About</div>
-        <div class="block">Contact</div>
+        <div class="block"><a href="about.html">About The Artist</a></div>
+        <div class="block"><a href="contact.html">Contact</a></div>
       </div>
     </div>
 
     <!-- Slideshow -->
+    <div class="overlayA title-size"></div>
     <div class="slider">
       <div class="slide-track">
         <div class="slide">
@@ -63,6 +60,72 @@
         </div>
       </div>
     </div>
+
+    <div class="divider"></div>
+    
+    <div class="marginBlock">
+
+      <div class="img-comp-container">
+        <div class="img-comp-img">
+          <img src="img/IMG_20220912_154414.jpg" width="500" height="500">
+        </div>
+        <div class="img-comp-img img-comp-overlay">
+          <img src="img/236265446_3134836950085062_2687201385954556118_n.jpg" width="500" height="500">
+        </div>
+      </div>
+
+      <div class="shift-left-600">
+        <h1>Lorem Ipsum</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt, felis ut gravida ultricies, risus sapien hendrerit magna, sit amet consectetur massa enim ut magna. In eleifend, enim nec tempor volutpat, orci odio tempus nunc, eu vulputate nunc mi vel libero. Mauris mattis felis consectetur ex malesuada semper. Phasellus ac nisi ut purus ullamcorper elementum vel et erat. Proin pretium condimentum luctus. Suspendisse potenti. Nunc lacus est, scelerisque non lobortis nec, fermentum vitae nisl.</p>
+        <button class="button green">Get Your Own Here</button>
+      </div>
+      
+    </div>
+
+    <div class="divider"></div>
+
+
+    <div class="marginBlock">
+
+      <div class="shift-right-100">
+        <h1>About the Artist</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt, felis ut gravida ultricies, risus sapien hendrerit magna, sit amet consectetur massa enim ut magna. In eleifend, enim nec tempor volutpat, orci odio tempus nunc, eu vulputate nunc mi vel libero. Mauris mattis felis consectetur ex malesuada semper. Phasellus ac nisi ut purus ullamcorper elementum vel et erat. Proin pretium condimentum luctus. Suspendisse potenti. Nunc lacus est, scelerisque non lobortis nec, fermentum vitae nisl.</p>
+        <button class="button green">Learn More</button>
+      </div>
+      
+      <img src="img/imagePlaceholder.jpg" alt="">
+
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="footer">
+
+      <div class="footerBlock">
+
+        <div class="column">
+          <h2>Contact</h2>
+        <p>
+          123-456-7890<br>
+          example@gmail.com<br>
+          123 Example Street, City, State
+        </p>
+        </div>
+
+        <div class="column">
+          <h2>Links</h2>
+          <p>
+            <a href="about.html">About the Artist</a>
+            <br>
+            <a href="contact.html">Contact</a>
+            <br>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+    
   </body>
-  <script src="script.js"></script>
+  <script>initComparisons();</script>
 </html>
