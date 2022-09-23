@@ -165,12 +165,12 @@ p {
 }
 .slider {
   background: white;
-  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125); */
   height: 500px;
-  margin: auto;
+  /* margin: auto; */
   overflow: hidden;
   position: relative;
-  width: 100%;
+  width: 700px;
 }
 .slider::before,
 .slider::after {
@@ -183,7 +183,7 @@ p {
 
   height: 500px;
   position: absolute;
-  width: 200px;
+  width: 100px;
   z-index: 2;
 }
 
@@ -203,7 +203,7 @@ p {
 }
 .slider .slide {
   height: unset;
-  width: 500px;
+  width: 700px;
 }
 
 .divider {
@@ -229,13 +229,15 @@ p {
 
 .marginBlock {
   display: flex;
-  margin-left: 100px;
-  margin-right: 100px;
+  margin-left: 200px;
+  margin-right: 200px;
   align-items: center;
 }
 
+/*  ---- FOOTER ----   */
+
 .footer {
-  background-color: rgb(255, 217, 168);
+  background-color: hsl(43, 70%, 85%);
 }
 
 .footerBlock {
@@ -252,12 +254,27 @@ p {
   margin-left: 600px;
   z-index: 1;
 }
+.shift-left-100 {
+  margin-left: 100px;
+  z-index: 1;
+}
 .shift-right-100 {
   margin-right: 100px;
 }
 
+.wrap{
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+/*  ----   BUTTON   ----   */
+
 .button {
-  background-color: #4caf50; /* Green */
+  background-color: #ddb4b8; /* Green */
   border: none;
   color: white;
   padding: 16px 32px;
@@ -271,14 +288,21 @@ p {
 }
 
 .green {
-  background-color: rgb(255, 255, 255);
-  color: rgb(0, 0, 0);
-  border: 2px solid #4caf50;
+  background-color: hsl(144, 30%, 56%);
+  color: white;
 }
 
 .green:hover {
-  background-color: #4caf50;
+  background-color: hsl(90, 30%, 69%);
+}
+
+.pink {
+  background-color: hsl(354, 30%, 61%);
   color: white;
+}
+
+.pink:hover {
+  background-color: hsl(354, 38%, 79%);
 }
 
 /* Comparison Slider */
