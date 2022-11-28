@@ -3,6 +3,7 @@ body {
   font-family: Raleway;
   margin: 0;
   height: 100%;
+  max-width: 100%;
 }
 
 a {
@@ -16,7 +17,7 @@ p {
 }
 
 .cursive {
-  font-family: ms madi;
+  font-family: dancing script;
 }
 .title-size {
   font-size: 90px;
@@ -25,10 +26,11 @@ p {
 .title {
   float: left;
   padding: 15px;
+  padding-top: 0;
   font-size: 45px;
   margin-left: 20px;
   font-weight: 500;
-  font-family: ms madi;
+  font-family: meddon;
   text-transform: none;
 }
 
@@ -217,14 +219,15 @@ p {
 
 .titleBlock {
   display: flex;
-  height: 500px;
+  height: 300px;
   justify-content: center;
   align-items: center;
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center;
+  /* filter: brightness(0.5); */
   color: white;
-  text-shadow: 0px 0px 20px #161013, 0px 0px 20px #161013;
+  /* text-shadow: 0px 0px 20px #161013, 0px 0px 20px #161013; */
 }
 
 .marginBlock {
@@ -335,4 +338,90 @@ p {
   background-color: #ffffff;
   opacity: 1;
   border-radius: 50%;
+}
+
+
+
+@media screen and (max-width: 400px) {
+  /* slide show */
+@keyframes scroll {
+  100% {
+    transform: translateX(calc(-250px * 5));
+  }
+}
+.slider {
+  height: 250px;
+  width: 350px;
+}
+.slider::before,
+.slider::after {
+  height: 250px;
+  width: 50px;
+}
+.slider .slide-track {
+  width: calc(250px * 10);
+}
+.slider .slide {
+  height: unset;
+  width: 350px;
+}
+
+/* topnav */
+.topnav{
+  padding: 0%;
+}
+.topnav .title{
+  padding: 15px;
+  font-size: 25px;
+  margin: 0px;
+}
+.topnav .block{
+  padding: 0px;
+  font-size: 15px;
+}
+.rightGroup {
+  margin-right: 0px;
+}
+.wrap{
+  margin: 5px;
+  flex-direction: column;
+    justify-content: space-around;
+}
+
+h1{
+  font-size: x-large;
+}
+.marginBlock {
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+  align-items: stretch;
+  flex-direction: column;
+}
+.shift-left-600 {
+  margin-left: 0px;
+  z-index: 1;
+}
+
+.img-comp-container {
+  position: relative;
+  height: 250px;
+}
+
+img{
+  height: 250px;
+  width: 250px;
+}
+
+.footer{
+  width: 100%;
+}
+
+.footerBlock {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 }
