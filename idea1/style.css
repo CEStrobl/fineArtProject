@@ -459,3 +459,17 @@ input[type=submit]:hover {
   margin-left: 100px;
   margin-right: 100px;
 }
+
+
+
+
+/* -----     Gallery     ----- */
+
+.marginBlock-gallery{
+  display: flex;
+  margin-left: 0;
+  margin-right: 0;
+  align-items: flex-end;
+  width: 1330px;
+  justify-content: space-around;
+}
